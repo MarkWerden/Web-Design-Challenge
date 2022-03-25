@@ -1,0 +1,97 @@
+<!DOCTYPE html>     <!--This is just a semi-copy of the index.html with slight changes -->
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>HTML Web Design Homework Assignment</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+        <style>
+            body {
+                background-color: #EDEDED;
+            }
+            .navbar {
+              max-height: 57px;
+              background-color: white;
+            }
+            .dropdown-menu .dropdown {
+              background-color: #e7e7e7;
+            }
+            .navbar-brand {
+              font-weight: bold;
+              font-family: 'Times New Roman', Times, serif;
+            }
+            .box {
+              margin-top: 60px;
+              margin-bottom: 70px;
+              padding: 10px 75px 900px;
+              color:black;
+              background-color: white;
+            }
+            a {
+              color: #6D8092;
+              font-size: 15px; 
+            }
+        </style>
+    </head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <a class="navbar-brand" style="background-color: #0BADA6; color: white"; href="../index.html">Latitude</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="Max Temperature.html">Max Temperature</a></li>
+                      <li><a href="Humidity.html">Humidity</a></li>
+                      <li><a href="Cloudiness.html">Cloudiness</a></li>
+                      <li><a href="Wind Speed.html">Wind Speed</a></li>
+                  </ul>
+              <li><a href="Comparison.html">Comparison</a></li>
+              <li><a href="Data.html">Data</a></li>
+              </li>
+          </ul>
+      </div>
+
+      <div class="contianer">
+        <div class="row">
+          <div class="col-lg-8 col-sm-12">
+            <div class="box">
+              <h3 align="center">Comparison: Latitude vs. X</h3>
+              <hr>
+              <p>Click on any plot to get an in-depth analysis.</p>
+              <hr>
+                <div class="col-md-6 col-sm-3" style="padding-bottom: 30px">
+                  <a href="Max Temperature.html">
+                    <img src="../Resources/Fig1.png" alt="Max Temperature" width="400" height="350" align="left">
+                  </a>
+                </div>
+                <div class="col-md-6 col-sm-3" style="padding-bottom: 30px">
+                  <a href="Humidity.html">
+                    <img src="../Resources/Fig2.png" alt="Humidity" width="400" height="350">
+                  </a>
+                </div>
+                <div class="col-md-6 col-sm-3" style="padding-bottom: 30px" width="400" height="350">
+                  <a href="Cloudiness.html">
+                    <img src="../Resources/Fig3.png" alt="Cloudiness" width="400" height="350">
+                  </a>
+                </div>
+                <div class="col-md-6 col-sm-3" style="padding-bottom: 30px" width="400" height="350">
+                  <a href="Wind Speed.html">
+                    <img src="../Resources/Fig4.png" alt="Wind Speed" width="400" height="350">
+                  </a>
+                </div>
+            </div>
+          </div>
+  </nav>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>     <!--The Majority of these Sub-Links are going to be near-exact copies of the index.html. -->
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>HTML Web Design Homework Assignment</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+        <style>
+            body {
+                background-color: #EDEDED;
+            }
+            .navbar {
+              max-height: 57px;
+              background-color: white;
+            }
+            .dropdown-menu .dropdown {
+              background-color: #e7e7e7;
+            }
+            .navbar-brand {
+              font-weight: bold;
+              font-family: 'Times New Roman', Times, serif;
+            }
+            .box {
+              margin-top: 60px;
+              margin-bottom: 70px;
+              padding: 10px 75px 250px;
+              color:black;
+              background-color: white;
+            }
+            .box2 {
+              margin-top: 60px;
+              margin-bottom: 70px;
+              padding: 10px 10px 400px;
+              color: black;
+              background-color: white;
+            }
+            a {
+              color: #6D8092;
+              font-size: 15px; 
+            }
+        </style>
+    </head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <a class="navbar-brand" style="background-color: #0BADA6; color: white"; href="../index.html">Latitude</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="Max Temperature.html">Max Temperature</a></li>
+                      <li><a href="Humidity.html">Humidity</a></li>
+                      <li><a href="Cloudiness.html">Cloudiness</a></li>
+                      <li><a href="Wind Speed.html">Wind Speed</a></li>
+                  </ul>
+              <li><a href="Comparison.html">Comparison</a></li>
+              <li><a href="Data.html">Data</a></li>
+              </li>
+          </ul>
+      </div>
+
+      <div class="contianer">
+        <div class="row">
+          <div class="col-lg-7 col-sm-12">
+            <div class="box">
+              <h3 align="center">Wind Speed</h3>
+              <hr>
+              <img src="../Resources/Fig4.png" align="left" alt="Cloudiness" width="400" height="275">
+              <p>Wind speed appears to slightly increase as we move away from the equator. However, to conclusively describe a pattern, we would need to go beyond the range in data to reach cities at closer to the poles. Only then can we have a sample large to confirm the pattern.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="box2">
+              <h2 align="center">Visualizations</h2>
+              <hr>
+                <div class="col-md-6 col-sm-3" style="padding-bottom: 30px">
+                  <a href="Max Temperature.html">
+                    <img src="../Resources/Fig1.png" alt="Max Temperature" width="200" height="175" align="left">
+                  </a>
+                </div>
+                <div class="col-md-6 col-sm-3" style="padding-bottom: 30px">
+                  <a href="Humidity.html">
+                    <img src="../Resources/Fig2.png" alt="Humidity" width="200" height="175">
+                  </a>
+                </div>
+                <div class="col-md-6 col-sm-3" style="padding-bottom: 30px">
+                  <a href="Cloudiness.html">
+                    <img src="../Resources/Fig3.png" alt="Cloudiness" width="200" height="175">
+                  </a>
+                </div>
+                <div class="col-md-6 col-sm-3" style="padding-bottom: 30px">
+                  <a href="Wind Speed.html">
+                    <img src="../Resources/Fig4.png" alt="Wind Speed" width="200" height="175">
+                  </a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </nav>
+</body>
+</html>

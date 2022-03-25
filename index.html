@@ -1,0 +1,121 @@
+<!DOCTYPE html>     <!--Essential starting code: DOCTYPE and language.-->
+<html lang="en-us"> <!--Note: I tried to comment as much as I could as there are a few concepts that are new to me and less complicated than what I was originally thinking. - Mark-->
+    <head>
+        <meta charset="UTF-8"> <!--Not always necessary but it helps when is needed. Always nice to have it just in case.-->
+
+        <!--This sets a scale on the HTML site depending on what device is used to open it.-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>HTML Web Design Homework Assignment</title>
+
+        <!--Theis line refernces the Bootstrap CSS to be used within the HTML. Basically its a form of importing.-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!--Essential Scripts for running anything related to Bootstrap. (Note: This is needed if you want dropdown tabs to work for example)-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+        <style> /* All classes are defined here at the start so they can be used later in the code. */
+            body {
+                background-color: #EDEDED;
+            }
+            .navbar {
+              max-height: 57px;
+              background-color: white;
+            }
+            .dropdown-menu .dropdown {
+              background-color: #e7e7e7;
+            }
+            .navbar-brand {
+              font-weight: bold;
+              font-family: 'Times New Roman', Times, serif;
+            }
+            .box {
+              margin-top: 60px;
+              margin-bottom: 70px;
+              padding: 10px 75px 160px;
+              color:black;
+              background-color: white;
+            }
+            .box2 {
+              margin-top: 60px;
+              margin-bottom: 70px;
+              padding: 10px 10px 400px;
+              color: black;
+              background-color: white;
+            }
+            a {
+              color: #6D8092;
+              font-size: 15px; 
+            }
+        </style>
+    </head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light"> <!--This creates a large space for a navigation bar to be used in the top of the site.-->
+      <div class="container-fluid">
+          <div class="navbar-header"> <!--This handles the button on the left of the website.-->
+              <a class="navbar-brand" style="background-color: #0BADA6; color: white"; href="index.html">Latitude</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right"> <!--This basically handles the dropdown menu and other links at the right of the website.-->
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="Sub-Links/Max Temperature.html">Max Temperature</a></li>
+                      <li><a href="Sub-Links/Humidity.html">Humidity</a></li>
+                      <li><a href="Sub-Links/Cloudiness.html">Cloudiness</a></li>
+                      <li><a href="Sub-Links/Wind Speed.html">Wind Speed</a></li>
+                  </ul>
+              <li><a href="Sub-Links/Comparison.html">Comparison</a></li>
+              <li><a href="Sub-Links/Data.html">Data</a></li>
+              </li>
+          </ul>
+      </div>
+
+      <div class="contianer"> <!--The container class keeps information on both regions.-->
+        <div class="row">
+          <div class="col-lg-7 col-sm-12"> <!--This class basically tells how large to make the box region. (For the box on the left)-->
+            <div class="box">
+              <h3 align="center">Summary: Latitude vs. X</h3>
+              <hr>
+              <img src="Resources/Fig1.png" align="left" alt="Maximum Temperature" width="400" height="275">
+              <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
+                  accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over
+                  500 cities.</p>
+              <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
+                  Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the
+                  source data and visualizations created as part of the analysis, as well as explanations and descriptions of
+                  any trends and correlations witnessed.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12"> <!--This part is for the box on the right.-->
+            <div class="box2">
+              <h2 align="center">Visualizations</h2>
+              <hr>
+                <div class="col-md-6 col-sm-3" style="padding-bottom: 30px">
+                  <a href="Sub-Links/Max Temperature.html"> <!--To make an image link work, the img argument has to be placed inside this current argument-->
+                    <img src="Resources/Fig1.png" alt="Max Temperature" width="200" height="175" align="left">
+                  </a>
+                </div>
+                <div class="col-md-6 col-sm-3" style="padding-bottom: 30px">
+                  <a href="Sub-Links/Humidity.html">
+                    <img src="Resources/Fig2.png" alt="Humidity" width="200" height="175">
+                  </a>
+                </div>
+                <div class="col-md-6 col-sm-3" style="padding-bottom: 30px">
+                  <a href="Sub-Links/Cloudiness.html">
+                    <img src="Resources/Fig3.png" alt="Cloudiness" width="200" height="175">
+                  </a>
+                </div>
+                <div class="col-md-6 col-sm-3" style="padding-bottom: 30px">
+                  <a href="Sub-Links/Wind Speed.html">
+                    <img src="Resources/Fig4.png" alt="Wind Speed" width="200" height="175">
+                  </a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </nav>
+</body>
+</html>
